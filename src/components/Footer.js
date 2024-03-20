@@ -1,32 +1,39 @@
-import { socialLinks, companyName } from "../util/data.js";
-import { Icon } from "./Icon.js";
+import { socialMedia } from "../util/data.js";
+import Image from "next/image";
 
-const company = companyName;
 export default function Footer() {
-  return (
-    <footer className="bg-blue-900 text-center text-white">
-      <div className="container px-6 pt-6 mx-auto">
-        <div className="mb-6 flex justify-center w-full">
-          {socialLinks.map((link) => (
-            <a
-              title={link.id}
-              aria-label={link.description}
-              key={link.id}
-              href={link.url}
-              id={link.id}
-              type="button"
-              className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 flex items-center justify-center"
-            >
-              <Icon color="white" width="24" height="24" src={link.src} />
-            </a>
-          ))}
+    return (
+        
+    <footer className="grid grid-cols-12 bg-gradient-to-r from-[#0A2647]  to-[#205295] rounded-t-[3rem] py-6 text-xs text-white">
+        <div className="col-start-2 col-span-10">
+            <h6 className="uppercase mb-2 px-6">Contacta con syx</h6>
+            <div className="flex flex-col sm:flex-row justify-between space-y-2">
+                <div className="grid grid-flow-col auto-cols-min space-x-3 ">
+                    {socialMedia.map(item => (
+                        <a
+                        title={item.text}
+                        key={item.text}
+                        href={item.href}
+                        className="w-8 hover:scale-110 transition ease-in-out duration-300"
+                        >
+                            <Image
+                            priority
+                            className="invert"
+                            src={item.icon}
+                            alt={item.text}
+                            />
+                        </a>
+                    ))}
+                    
+                </div>
+                <div className="opacity-80 flex space-x-3 self-end">
+                    <p>Términos y condiciones</p>
+                    <p>Aviso de provacidad</p>
+                </div>
+            </div>
+            <hr className="my-2 h-0.5 border-t-0 bg-[var(--secondary)]" />
+            <p className="text-right opacity-80 text-[var(--secondary)] px-6">Copyright © 2024 SYX Services Inc</p>
         </div>
-      </div>
-
-      {/* <!--Copyright section--> */}
-      <div className="p-4 text-center bg-black bg-opacity-20">
-        © 2024 {company} S.A. de C.V.
-      </div>
     </footer>
-  );
-}
+    );
+  }
