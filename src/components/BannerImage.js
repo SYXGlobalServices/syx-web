@@ -10,7 +10,7 @@ export default function BannerImage() {
         src={BannerHorizontal}
         sizes="100vw"
         style={{
-          height: "100vh",
+          height: "85vh",
         }}
         alt="Banner del Inicio de SYX Global Services"
         className="hidden sm:block inset-0 w-full object-cover"
@@ -20,7 +20,7 @@ export default function BannerImage() {
         src={BannerVertical}
         sizes="100vw"
         style={{
-          height: "100vh",
+          height: "85vh",
         }}
         alt="Banner del Inicio de SYX Global Services"
         className="block sm:hidden inset-0 w-full object-cover"

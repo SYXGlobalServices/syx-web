@@ -15,7 +15,7 @@ const company = companyName;
     // { name: "Nosotros", href: "/Us" },
   ];
   return (
-    <nav className="bg-white fixed top-0 w-full shadow">
+    <nav className="bg-white fixed top-0 w-full shadow h-[5rem] z-50">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
