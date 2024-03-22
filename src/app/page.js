@@ -37,7 +37,7 @@ export default function Home() {
           {cardIndex.map(item => (
           <Card
           key={item.id}
-          cssCard='w-64 bg-white rounded-3xl border-solid	border border-[var(--secondary)] relative pt-5'
+          cssCard='w-64 bg-white rounded-3xl border-solid	border border-[var(--secondary)] relative pt-5 hover:scale-110 transition ease-in-out duration-300'
           cssImg='absolute w-[8rem] -top-[7rem] left-1/4'
           src={item.src}
           alt={'SYX'}
