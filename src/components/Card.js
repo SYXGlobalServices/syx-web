@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function Card({cssCard,cssContent,cssImg,cssTitle,cssText,src,alt,title,text}) {
-    return (
+  return (
          <div className={`${cssCard}`}>
               <Image 
               src={src}

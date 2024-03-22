@@ -1,11 +1,12 @@
+//redes sociales
 import Linkedin from "../assets/socialmedia/linkedin.svg"
 import Facebook from "../assets/socialmedia/facebook.svg"
 import Instagram from "../assets/socialmedia/instagram.svg"
 import Youtube from "../assets/socialmedia/youtube.svg"
 import X from "../assets/socialmedia/x.svg"
 import Whatsapp from "../assets/socialmedia/whatsapp.svg"
-
-
+//imagen prueba de carta home
+import CardImg from "../assets/card_img.png"
 // export const socialLinks = [
 //   {
 //     id: 1,
@@ -57,7 +58,28 @@ import Whatsapp from "../assets/socialmedia/whatsapp.svg"
 
 // }
 // ];
-
+//Arreglo de cartas home
+export const cardIndex =[
+{
+  id: 1,
+  src: CardImg,
+  alt: "SYX",
+  text: "Te brindamos claridad y transparencia para que comprendas plenamente nuestras acciones y decisiones."
+},
+{
+  id: 2,
+  src: CardImg,
+  alt: "SYX",
+  text: "Atención personalizada garantizando un servicio cercano y completamente adaptado a tus necesidades individuales, asegurando así tu satisfacción total."
+},
+{
+  id: 3,
+  src: CardImg,
+  alt: "SYX",
+  text: "Experimentarás beneficios al instante, notando mejoras rápidas y significativas en tu bienestar financiero."
+}
+]
+//Arreglo de redes sociales del footer
 export const socialMedia =[
   {
   icon: Linkedin,
